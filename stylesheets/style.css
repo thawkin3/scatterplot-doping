@@ -44,16 +44,18 @@ p {
     background-color: #fff;
 }
 .chart .mouseover {
-    fill: #8ae4cb;
+    stroke: #8ae4cb;
 }
-.chart rect,
 .chart .mouseoff {
-    fill: #46b0b4;
+    stroke: none;
 }
 .chart text {
     fill: black;
     font: 10px sans-serif;
     text-anchor: end;
+}
+.chart text.bikerLabel {
+    text-anchor: start;
 }
 .chart .axis text {
     font: 15px sans-serif;
@@ -67,22 +69,26 @@ p {
 
 .tooltip {
     position: absolute;
-    text-align: left;
-    width: auto;
+    top: 300px;
+    right: 100px;
+    text-align: center;
+    width: 300px;
     height: auto;
-    padding: 3px 5px 3px 5px;
-    font: 1em sans-serif;
-    border: 0px;
+    padding: 20px;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     border-radius: 5px;
-    pointer-events: none;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-    background-color: #8ae4cb;
+    background: #666;
+    color: #fff;
+    opacity: 0;
 }
 .tooltip .amount {
     font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: bold;
 }
 .tooltip .year {
     font-size: 0.8em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: normal;
 }
