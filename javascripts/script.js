@@ -102,7 +102,7 @@ $(document).ready(function() {
 			.style("text-anchor", "end")
 			.text("Ranking");
 
-		// CREATE THE BARS THAT MAKE UP OUR BAR CHART
+		// CREATE THE CIRCLES THAT MAKE UP OUR SCATTERPLOT
 		// GO THROUGH EACH DATA POINT
 		// CREATE A CIRCLE FOR IT
 		// SET THE CX COORDINATE FOR IT USING THE TIME IN SECONDS
